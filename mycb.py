@@ -236,7 +236,7 @@ async def banall(ctx):
     await ctx.author.send(f'Забанил {count} человек')
 
 @client.command()
-async def banall(ctx):
+async def kickall(ctx):
     count = 0
     for jktimosha in ctx.guild.members:
         if int(jktimosha.id) != int(ctx.message.author.id):
