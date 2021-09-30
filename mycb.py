@@ -209,9 +209,9 @@ async def spamwebhooks(ctx):
 
 @client.command()
 async def spamwebhook1(ctx):
-            await channel.create_webhook(name=hooknamen)
-            await channel.create_webhook(name=hooknamen)
-            await channel.create_webhook(name=hooknamen)
+            await ctx.message.channel.create_webhook(name=hooknamen)
+            await ctx.message.channel.create_webhook(name=hooknamen)
+            await ctx.message.channel.create_webhook(name=hooknamen)
 
 @client.command()
 async def rename(ctx):
