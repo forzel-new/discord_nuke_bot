@@ -212,6 +212,10 @@ async def spamwebhook1(ctx):
             await ctx.message.channel.create_webhook(name=hooknamen)
             await ctx.message.channel.create_webhook(name=hooknamen)
             await ctx.message.channel.create_webhook(name=hooknamen)
+            hooklist = await ctx.message.channel.webhooks()
+            for hook in hooklist:
+                for i in range(100):
+                    await hook.send(content=spamtextn, wait=True)
 
 @client.command()
 async def rename(ctx):
