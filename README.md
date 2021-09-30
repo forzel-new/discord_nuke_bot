@@ -15,3 +15,6 @@ pip install discord , pip install colorama , pip install asyncio
 
 
 Спасибо!
+
+# Обновления
+0.1.1 - исправлена команда !spamwebhook1
