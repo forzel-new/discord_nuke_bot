@@ -19,4 +19,4 @@ pip install discord , pip install colorama , pip install asyncio
 # Обновления
 0.1.1 (30.09.2021) - исправлена команда spamwebhook1 и spamwebhooks
 
-\n0.1.2 (11.09.2021) - исправлен баг с командой rename
+0.1.2 (11.09.2021) - исправлен баг с командой rename
