@@ -1,4 +1,4 @@
 echo off
 cls
-python mycb.py
+python fzlnuker.py
 pause
