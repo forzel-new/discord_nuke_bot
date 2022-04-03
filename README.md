@@ -10,6 +10,8 @@
 После установки открываем командную строку и пишем эти команды:
 ```
 pip install discord
+pip install asyncio
+pip install requests
 pip install colorama
 ```
 
